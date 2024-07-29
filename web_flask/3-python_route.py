@@ -8,7 +8,8 @@
                 with 'text' having the default value "is cool"
         MUST use the option 'strict_slashes=False in route definition
 """
-from flask import Flask, escape
+from flask import Flask
+from werkzeug.utils import escape
 
 # instantiate a Flask application
 app = Flask(__name__)
