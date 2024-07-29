@@ -9,7 +9,8 @@
                 /number/<n>: display "n is a number" ONLY IF n is an int
         MUST use the option 'strict_slashes=False in route definition
 """
-from flask import Flask, escape
+from flask import Flask
+from werkzeug.utils import escape
 
 # instantiate a Flask application
 app = Flask(__name__)
